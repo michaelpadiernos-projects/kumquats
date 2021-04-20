@@ -1,0 +1,9 @@
+global:
+  version: 1.0
+  css:
+    theme:
+      assets/css/kumquats.css: {}
+  js:
+    assets/js/kumquats.js: {}
+  dependencies:
+    - core/jquery
