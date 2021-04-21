@@ -1,0 +1,24 @@
+{
+  "name": "kumquats",
+  "description": "A minimal portfolio theme for Drupal.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelPadiernos/kumquats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelPadiernos/kumquats/issues"
+  },
+  "homepage": "https://github.com/MichaelPadiernos/kumquats#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.11"
+  }
+}
