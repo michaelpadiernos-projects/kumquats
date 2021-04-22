@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/MichaelPadiernos/kumquats#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.32.11"
+    "autoprefixer-stylus": "^1.0.0",
+    "cssnano": "^4.1.11",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-stylus": "^2.7.0",
+    "rupture": "^0.7.1",
+    "typographic": "^3.0.0"
   }
 }
