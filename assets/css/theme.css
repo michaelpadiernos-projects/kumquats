@@ -1,11 +1,43 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab|Sura|Open+Sans&display=swap");
-#block-kumquats-branding .block-branding {
+body .kumquats-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .kumquats-layout header,
+body .kumquats-layout main,
+body .kumquats-layout footer {
+  padding: 1rem;
+}
+body.toolbar-vertical .kumquats-layout {
+  margin-top: -39px;
+}
+body.toolbar-vertical .kumquats-layout header {
+  margin-top: 39px;
+}
+body .kumquats-layout {
+  font-family: 'Roboto', 'Frutiger', 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body .kumquats-layout * h1,
+body .kumquats-layout * h2,
+body .kumquats-layout * h3,
+body .kumquats-layout * h4,
+body .kumquats-layout * h5,
+body .kumquats-layout * h6,
+body .kumquats-layout * h7 {
+  font-family: 'Roboto Slab', 'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif;
+  margin-top: 0;
+}
+footer {
+  margin-top: auto;
+}
+header #block-kumquats-branding .block-branding {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   grid-gap: 0.5rem;
 }
-#block-kumquats-branding .block-branding .site-logo img {
+header #block-kumquats-branding .block-branding .site-logo img {
   width: auto;
   height: 3rem;
 }
