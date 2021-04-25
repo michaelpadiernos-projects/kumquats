@@ -32,12 +32,18 @@ footer {
   margin-top: auto;
 }
 header #block-kumquats-branding .block-branding {
+  align-items: center;
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: center;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
 }
-header #block-kumquats-branding .block-branding .site-logo img {
-  width: auto;
+header #block-kumquats-branding .block-branding a.site-logo img {
   height: 3rem;
+  width: auto;
+}
+header #block-kumquats-branding .block-branding a.site-name {
+  text-decoration: none;
+}
+header #block-kumquats-branding .block-branding p.site-slogan {
+  margin: 0;
 }

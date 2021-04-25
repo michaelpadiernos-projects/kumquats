@@ -7,7 +7,7 @@ const	auto		= require('autoprefixer-stylus'),
 			typo		= require('typographic');
 
 
-gulp.task('run', () => {
+gulp.task('theme', () => {
 
 	const processors = [
 		cssnano

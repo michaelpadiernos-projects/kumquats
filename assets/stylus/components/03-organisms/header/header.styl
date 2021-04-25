@@ -1,15 +1,25 @@
+// ORGANISMS: HEADER
+
 header
 	
 	// branding
 	#block-kumquats-branding
 		
 		.block-branding
+			align-items center
 			display grid
 			grid-template-columns auto 1fr
-			align-items center
-			grid-gap: 0.5rem
+			grid-gap 1rem
 			
-			.site-logo
-				img
-					width: auto
-					height: 3rem
+			a
+				&.site-logo
+					img
+						height 3rem
+						width auto
+				
+				&.site-name
+					text-decoration none
+					
+			p
+				&.site-slogan
+					margin 0

@@ -25,5 +25,8 @@
     "gulp-stylus": "^2.7.0",
     "rupture": "^0.7.1",
     "typographic": "^3.0.0"
+  },
+  "dependencies": {
+    "@coreui/icons": "^2.0.1"
   }
 }

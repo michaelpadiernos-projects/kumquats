@@ -3,6 +3,10 @@ type: theme
 description: "Custom theme for M. Padiernos"
 core_version_requirement: ^8 || ^9
 base theme: classy
+
+libraries:
+  - kumquats/global
+  
 regions:
   header:       "Header"
   navigation:   "Navigation"
@@ -14,5 +18,3 @@ regions:
   footer:       "Footer"
   actions:      "Actions"
   disabled:     "Disable"
-libraries:
-  - kumquats/global
