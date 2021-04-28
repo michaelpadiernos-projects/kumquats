@@ -1,0 +1,54 @@
+<div id="canvas-wrapper" class="wrapper canvas-wrapper">
+
+	<header role="banner" id="header" class="header">
+
+    {% if global_variables.logo %}
+      {% include '@kumquats/partials/brand-logo.html.twig' %} 
+    {% endif %}
+
+    {% if site_name or site_slogan %}
+    <div id="brand-heading" class="brand-heading">
+      {% if site_name %}
+        {% include '@kumquats/partials/brand-name.html.twig' %} 
+      {% endif %}
+      {% if site_slogan %}
+        {% include '@kumquats/partials/brand-slogan.html.twig' %} 
+      {% endif %}
+    </div>
+    {% endif %}
+  
+  </header>
+
+	<div id="content-wrapper" class="wrapper content-wrapper">
+		
+		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+			
+		<main id="content" class="content"  role="main">
+
+      <section role="content" id="main-content" class="content">
+        <div class="container">
+
+          {% if page.highlight %}
+            {{ page.highlight }}
+          {% endif %}
+
+          {% if page.help %}
+            {{ page.help }}
+          {% endif %}
+
+          {{ page.content }}
+
+        </div>
+      </section>
+
+		</main>
+
+		<footer id="footer" class="footer" role="contentinfo">
+	    <div class="container">
+		    {{ page.footer }}
+	    </div>
+    </footer>
+
+	</div>
+
+</div>

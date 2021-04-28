@@ -1,8 +1,20 @@
 body
 	
-	.kumquats-layout
+	&:before
+		content ''
+		display block
+		background-color primary-accent
+		position absolute
+		height 0.45rem
+		width 100vw
+	
+	#canvas-wrapper,
+	#content-wrapper
 		display flex
 		flex-direction column
+	#content-wrapper
+		flex-grow 1
+	#canvas-wrapper
 		min-height 100vh
 		
 		header, main, footer
@@ -10,7 +22,7 @@ body
 			
 	&.toolbar-vertical
 		
-		.kumquats-layout
+		#canvas-wrapper
 			margin-top -39px
 			
 			header

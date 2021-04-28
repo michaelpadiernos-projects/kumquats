@@ -1,0 +1,15 @@
+<section role="content" id="main-content" class="content">
+	<div class="container">
+
+		{% if page.highlight %}
+			{{ page.highlight }}
+		{% endif %}
+
+		{% if page.help %}
+			{{ page.help }}
+		{% endif %}
+
+		{{ page.content }}
+
+	</div>
+</section>

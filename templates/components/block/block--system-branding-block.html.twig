@@ -14,6 +14,7 @@
  */
 #}
 {% block content %}
+
 {%
   set classes = [
     'block',
@@ -23,19 +24,18 @@
 
 <div{{ attributes.addClass(classes)}}>
   {% if site_logo %}
-    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo">
-      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
-    </a>
+    {% include '@kumquats/partials/brand-logo.html.twig' %}
   {% endif %}
   {% if site_name or site_slogan %}
-  <div>
+  <div id="brand-heading" class="brand-heading">
     {% if site_name %}
-      <a class="site-name" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+      {% include '@kumquats/partials/brand-name.html.twig' %}
     {% endif %}
     {% if site_slogan %}
-      <p class="site-slogan">{{ site_slogan }}</p>
+      {% include '@kumquats/partials/brand-slogan.html.twig' %}
     {% endif %}
   </div>
   {% endif %}
 </div>
+
 {% endblock %}

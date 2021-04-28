@@ -1,49 +1,92 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab|Sura|Open+Sans&display=swap");
-body .kumquats-layout {
+body:before {
+  content: '';
+  display: block;
+  background-color: #ff914d;
+  position: absolute;
+  height: 0.45rem;
+  width: 100vw;
+}
+body #canvas-wrapper,
+body #content-wrapper {
   display: flex;
   flex-direction: column;
+}
+body #content-wrapper {
+  flex-grow: 1;
+}
+body #canvas-wrapper {
   min-height: 100vh;
 }
-body .kumquats-layout header,
-body .kumquats-layout main,
-body .kumquats-layout footer {
+body #canvas-wrapper header,
+body #canvas-wrapper main,
+body #canvas-wrapper footer {
   padding: 1rem;
 }
-body.toolbar-vertical .kumquats-layout {
+body.toolbar-vertical #canvas-wrapper {
   margin-top: -39px;
 }
-body.toolbar-vertical .kumquats-layout header {
+body.toolbar-vertical #canvas-wrapper header {
   margin-top: 39px;
 }
-body .kumquats-layout {
+body #canvas-wrapper {
   font-family: 'Roboto', 'Frutiger', 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-body .kumquats-layout * h1,
-body .kumquats-layout * h2,
-body .kumquats-layout * h3,
-body .kumquats-layout * h4,
-body .kumquats-layout * h5,
-body .kumquats-layout * h6,
-body .kumquats-layout * h7 {
+body #canvas-wrapper * h1,
+body #canvas-wrapper * h2,
+body #canvas-wrapper * h3,
+body #canvas-wrapper * h4,
+body #canvas-wrapper * h5,
+body #canvas-wrapper * h6,
+body #canvas-wrapper * h7 {
   font-family: 'Roboto Slab', 'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif;
   margin-top: 0;
+  line-height: 1;
 }
 footer {
   margin-top: auto;
 }
-header #block-kumquats-branding .block-branding {
+a.site-logo img {
+  height: 3rem;
+  width: auto;
+}
+a.site-name {
+  text-decoration: none;
+}
+p.site-slogan {
+  margin: 0;
+}
+body.path-frontpage header .block-branding {
   align-items: center;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 1rem;
 }
-header #block-kumquats-branding .block-branding a.site-logo img {
-  height: 3rem;
-  width: auto;
-}
-header #block-kumquats-branding .block-branding a.site-name {
-  text-decoration: none;
-}
-header #block-kumquats-branding .block-branding p.site-slogan {
+body.path-frontpage header .block-branding h1 {
   margin: 0;
+}
+body.maintenance-page #canvas-wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+body.maintenance-page #canvas-wrapper header.header {
+  display: grid;
+  justify-content: center;
+}
+body.maintenance-page #canvas-wrapper header.header .brand-logo,
+body.maintenance-page #canvas-wrapper header.header .brand-heading {
+  text-align: center;
+}
+body.maintenance-page #canvas-wrapper header.header .brand-logo h1,
+body.maintenance-page #canvas-wrapper header.header .brand-heading h1,
+body.maintenance-page #canvas-wrapper header.header .brand-logo P,
+body.maintenance-page #canvas-wrapper header.header .brand-heading P {
+  margin: 0;
+}
+body.maintenance-page #canvas-wrapper header.header .brand-logo {
+  height: 12vh;
+}
+body.maintenance-page #canvas-wrapper .content-wrapper {
+  text-align: center;
 }

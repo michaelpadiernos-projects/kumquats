@@ -1,0 +1,28 @@
+<div id="canvas-wrapper" class="wrapper canvas-wrapper">
+
+	{% include '@kumquats/partials/header.html.twig' %}
+
+	<div id="content-wrapper" class="wrapper content-wrapper">
+		
+		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+		{% if page.hero %}
+			{% include '@kumquats/partials/hero.html.twig' %}
+		{% endif %}
+			
+		<main id="content" class="content {% if page.aside %}with-aside{% endif %}"  role="main">
+
+			{% include '@kumquats/partials/content.html.twig' %}
+
+			{% if page.aside %}
+				{% include '@kumquats/partials/aside.html.twig' %}
+			{% endif %}
+
+		</main>
+
+		{% include '@kumquats/partials/footer.html.twig' %}
+
+	</div>
+
+</div>
+
